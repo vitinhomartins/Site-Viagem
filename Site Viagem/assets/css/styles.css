@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url('/assets/imagens/aleksandar-jason-a562ZEFKW8I-unsplash.jpg');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: wrap column;
+}
+
+.container2 {
+    margin-top: 40px;
+    display: flex;   
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.artigos {
+    display: flex;
+    margin: 70px;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.textinho {
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    opacity: 0.9;
+    background-color: #ADB5BD;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+ 
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #6C757D;    
+    border-radius: 20px;
+    transition: 0.65s; 
+    position: relative;
+    font-weight: bold;
+}
+
+#itens-menu {
+    margin: 15px;
+}
+
+/* estilizacao cards */
+@import url('https://fonts-googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+.card-group {
+    display: flex;
+    gap: 25px;    
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 25px;
+    width: 225px;
+    height: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.card .layer {
+    background: linear-gradient(to top, rgba(0, 0,0 1) rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+.card .info {
+    position: absolute;
+    bottom: -50%; 
+    padding: 15px;
+    opacity: 0;
+    transition: 0.5 bottom, 1.75s opacity;
+}
+.info p {
+    font-size: 14px;
+    margin-top: 3px;
+}
+.info button {
+    background: #6C757D;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.info button:hover {
+    cursor: pointer;
+    background: white;
+    color:#6C757D;    
+}
+    
+.card:hover, .card:hover img, .card:hover layer {
+    transform: scale(1.1)
+    
+}
+.card:hover > .layer {
+    opacity: 1;
+}
+.card:hover > .info {
+    bottom: 0;
+    opacity: 1;
+}
+
+.card-group:hover > .card:not(:hover) {
+    filter: blur(5px);
+}
