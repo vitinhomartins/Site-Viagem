@@ -21,23 +21,7 @@ body {
     flex-flow: wrap column;
 }
 
-.container2 {
-    margin-top: 40px;
-    display: flex;   
-    justify-content: center; 
-    flex-wrap: wrap;
-}
 
-.artigos {
-    display: flex;
-    margin: 70px;
-    justify-content: center; 
-    flex-wrap: wrap;
-}
-
-.textinho {
-
-}
 
 .menu {
     display: flex;
@@ -146,4 +130,65 @@ a:hover {
 
 .card-group:hover > .card:not(:hover) {
     filter: blur(5px);
+}
+
+.container3 {
+    margin-top: 15px;
+    display: flex;
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ADB5BD;
+    color: white;
+}
+
+#contact-me {
+    display: flex;
+    justify-items: center;
+    color: white;
+    margin-bottom: 12px;
+    box-sizing: border-box; 
+    font-family: 'Inter', sans-serif;
+    cursor: default;
+}
+
+/* Postagens! */ 
+
+.postagens {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    /*flex-flow: column wrap;*/
+}
+
+
+.postagem {
+    margin-bottom: 60px;
+    margin-top: 70px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #666f77;
+    border-radius: 25px;
+    opacity: 0.4;  
+
+}
+
+
+.text-postagem {
+    margin-top: 15px;
+}
+
+.headline-postagem, .underline-postagem, .text-postagem {
+    margin: 10px;
+}
+
+span {
+    margin-left: 8px;
+    margin-right: 8px;
 }
